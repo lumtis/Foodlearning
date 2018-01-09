@@ -1,0 +1,8 @@
+run
+quit
+exit
+run
+exit
+run
+sbt
+run

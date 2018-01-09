@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/bertrand/Desktop/SDTD/akka/target/scala-2.12/resource_managed/main/webapp,/Users/bertrand/Desktop/SDTD/akka/target/scala-2.12/classes/webapp)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/bertrand/Desktop/SDTD/akka/target/scala-2.12/resource_managed/main/webapp/js,/Users/bertrand/Desktop/SDTD/akka/target/scala-2.12/classes/webapp/js)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/bertrand/Desktop/SDTD/akka/target/scala-2.12/resource_managed/main/webapp/js/bundle.js,/Users/bertrand/Desktop/SDTD/akka/target/scala-2.12/classes/webapp/js/bundle.js)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/bertrand/Desktop/SDTD/akka/target/scala-2.12/resource_managed/main/webapp/js/polyfill,/Users/bertrand/Desktop/SDTD/akka/target/scala-2.12/classes/webapp/js/polyfill)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/bertrand/Desktop/SDTD/akka/target/scala-2.12/resource_managed/main/webapp/js/polyfill/nashorn-polyfill.js,/Users/bertrand/Desktop/SDTD/akka/target/scala-2.12/classes/webapp/js/polyfill/nashorn-polyfill.js)[0m
