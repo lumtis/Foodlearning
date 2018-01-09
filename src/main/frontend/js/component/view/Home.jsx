@@ -39,36 +39,6 @@ class Home extends React.Component {
 
         return (
             <div>
-              <Particles
-                params={{
-                  particles: {
-                    number: {
-                      value: 15
-                    },
-                    size: {
-                      value: 20,
-                      random: false
-                    },
-                    line_linked: {
-                      enable: true
-                    },
-                    shape: {
-                      type: 'image',
-                      image: {
-                        src: 'https://img15.hostingpics.net/pics/494463burger.png',
-                        width: 80,
-                        height: 100
-                      }
-                    },
-                    move: {
-                      out_mode: 'out',
-                      speed: 10,
-                      direction: 'top'
-                    }
-                  }
-                }}
-                style={{position: 'absolute'}}
-              />
               <h1 style={titleStyle}>FoodLearning</h1>
             </div>
         );

@@ -1,2 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0mjava.lang.IllegalStateException: Front-end build failed: Compilation failed![0m
-[0m[[0m[31merror[0m] [0m[0m	at $21de6d5ef03df9b92e66$.$anonfun$compileFrontend$1(build.sbt:40)[0m
