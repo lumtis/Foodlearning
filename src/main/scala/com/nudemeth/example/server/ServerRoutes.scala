@@ -16,6 +16,7 @@ trait ServerRoutes extends JsonSupport {
   lazy val route: Route = concat(
     home,
     about,
+    // pairs,
     js,
     dataHome,
     dataAbout,
@@ -52,8 +53,29 @@ trait ServerRoutes extends JsonSupport {
           complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, html))
         }
       }
+    } ~
+    path("pairs") {
+      pathEndOrSingleSlash {
+        get {
+          val model = """{ "pairs": [["Banana","Sel","0"],["Sel","Patate","1"]] }""".parseJson.compactPrint
+          log.info(s"Request: route=/, method=get")
+          complete(HttpEntity(ContentTypes.`application/json`, model))
+        }
+      }
     }
   }
+
+  // private val pairs: Route = {
+  //   path("pairs") {
+  //     pathEndOrSingleSlash {
+  //       get {
+  //         val model = """{ "pairs": [["Banana","Sel","0"],["Sel","Patate","1"]] }""".parseJson.compactPrint
+  //         log.info(s"Request: route=/, method=get")
+  //         complete(HttpEntity(ContentTypes.`application/json`, model))
+  //       }
+  //     }
+  //   }
+  // }
 
   private val dataHome: Route = {
     path("data" / "home") {

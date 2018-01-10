@@ -5,6 +5,7 @@ import About from './../view/About.jsx'
 const routes = [
     { path: '/', exact: true, title: 'Home', component: (model) => <Home model={model} /> },
     { path: '/about', title: 'About', component: (model) => <About model={model} /> }
+    //{ path: '/results/:payload', title: 'Results', component: (model) => <Results model={model} /> }
 ];
 
 module.exports = routes;

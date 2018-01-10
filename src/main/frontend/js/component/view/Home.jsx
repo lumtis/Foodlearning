@@ -6,10 +6,12 @@ class Home extends React.Component {
         super(props);
 
         this.addIng = this.addIng.bind(this)
+        this.getResultsFromServer = this.getResultsFromServer.bind(this)
 
         this.state = {
             model: this.props.model || {greeting: ''},
-            ingList: []
+            ingList: [],
+            results: {pairs: []}
         }
     }
 
@@ -47,10 +49,40 @@ class Home extends React.Component {
         this.setState({ingList: ingListTmp})
     }
 
+    getResultsFromServer(e) {
+        let url = '/pairs';
+        let header = new Headers({"Content-type": "application/json"});
+        let init = {
+            method: 'GET',
+            header: header,
+            cache: 'no-cache'
+        };
+        let request = new Request(url, init);
+        fetch(request).then((response) => {
+            if (response.ok) {
+                return response.json();
+            }
+            throw new Error(`Network response was not ok: status=${response.status}`);
+        }).then((result) => {
+            this.setState({ingList: [], results: result});
+        }).catch((error) => {
+            console.error(`Cannot fetch data from the server: url=${url}, error=${error.message}`)
+        });
+    }
+
     render() {
         var ingListHtml = []
         for (var i = 0; i < this.state.ingList.length; i++) {
             ingListHtml.push(<p style={ingStyle}>{this.state.ingList[i]}</p>)
+        }
+
+        var pairListHtml = []
+        for (var i = 0; i < this.state.results.pairs.length; i++) {
+            var pair = this.state.results.pairs[i]
+            var ing1 = pair[0]
+            var ing2 = pair[1]
+            var coef = pair[2]
+            pairListHtml.push(<p style={ingStyle}>{ing1} + {ing2} : {coef}</p>)
         }
 
         return (
@@ -90,13 +122,17 @@ class Home extends React.Component {
                 <div style={buttonStyle}>
                   <form onSubmit={this.addIng}>
                     <button>Add<input style={{visibility:'hidden', position:'absolute'}} type="submit" ref="submit" value=''/></button>
-                    <a><button>Send</button></a>
+                    <a onClick={this.getResultsFromServer}><button> Go </button></a>
                     <input className="form-control" style={inputStyle} ref="ing" placeholder="Salade" type="text"/>
                   </form>
                 </div>
-                <div style={{backgroundColor: '#F0F0F0'}}>
+                <div style={{backgroundColor: '#F0F0F0', marginBottom: '30px', paddind: '10px'}}>
                   <h3>Ingredients :</h3>
                   {ingListHtml}
+                </div>
+                <div style={{backgroundColor: '#F0F0F0', marginBottom: '30px', paddind: '10px'}}>
+                  <h3>Pairs :</h3>
+                  {pairListHtml}
                 </div>
               </div>
             </div>
@@ -138,3 +174,5 @@ var buttonStyle = {
 
 
 module.exports = Home;
+
+// <Link to="/results" params={{ payload: this.state.ingList }}>GO</Link>
