@@ -27059,7 +27059,9 @@ var routes = [{ path: '/', exact: true, title: 'Home', component: function compo
         return _react2.default.createElement(_Home2.default, { model: model });
     } }, { path: '/about', title: 'About', component: function component(model) {
         return _react2.default.createElement(_About2.default, { model: model });
-    } }];
+    }
+    //{ path: '/results/:payload', title: 'Results', component: (model) => <Results model={model} /> }
+}];
 
 module.exports = routes;
 
@@ -27121,16 +27123,79 @@ var Home = function (_React$Component) {
             _this.loadModelFromServer();
         };
 
+        _this.addIng = _this.addIng.bind(_this);
+        _this.getResultsFromServer = _this.getResultsFromServer.bind(_this);
+
         _this.state = {
-            model: _this.props.model || { greeting: '' }
+            model: _this.props.model || { greeting: '' },
+            ingList: [],
+            results: { pairs: [] }
         };
         return _this;
     }
 
     _createClass(Home, [{
+        key: 'addIng',
+        value: function addIng(e) {
+            e.preventDefault();
+
+            var ingListTmp = this.state.ingList;
+            var ing = this.refs.ing.value;
+            ingListTmp.push(ing);
+            this.setState({ ingList: ingListTmp });
+        }
+    }, {
+        key: 'getResultsFromServer',
+        value: function getResultsFromServer(e) {
+            var _this2 = this;
+
+            var url = '/pairs';
+            var header = new Headers({ "Content-type": "application/json" });
+            var init = {
+                method: 'GET',
+                header: header,
+                cache: 'no-cache'
+            };
+            var request = new Request(url, init);
+            fetch(request).then(function (response) {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Network response was not ok: status=' + response.status);
+            }).then(function (result) {
+                _this2.setState({ ingList: [], results: result });
+            }).catch(function (error) {
+                console.error('Cannot fetch data from the server: url=' + url + ', error=' + error.message);
+            });
+        }
+    }, {
         key: 'render',
         value: function render() {
-            // <h2>{this.state.model.greeting}</h2>
+            var ingListHtml = [];
+            for (var i = 0; i < this.state.ingList.length; i++) {
+                ingListHtml.push(_react2.default.createElement(
+                    'p',
+                    { style: ingStyle },
+                    this.state.ingList[i]
+                ));
+            }
+
+            var pairListHtml = [];
+            for (var i = 0; i < this.state.results.pairs.length; i++) {
+                var pair = this.state.results.pairs[i];
+                var ing1 = pair[0];
+                var ing2 = pair[1];
+                var coef = pair[2];
+                pairListHtml.push(_react2.default.createElement(
+                    'p',
+                    { style: ingStyle },
+                    ing1,
+                    ' + ',
+                    ing2,
+                    ' : ',
+                    coef
+                ));
+            }
 
             return _react2.default.createElement(
                 'div',
@@ -27139,21 +27204,21 @@ var Home = function (_React$Component) {
                     params: {
                         particles: {
                             number: {
-                                value: 15
+                                value: 10
                             },
                             size: {
-                                value: 20,
+                                value: 10,
                                 random: false
                             },
                             line_linked: {
-                                enable: true
+                                enable: false
                             },
                             shape: {
                                 type: 'image',
                                 image: {
                                     src: 'https://img15.hostingpics.net/pics/494463burger.png',
-                                    width: 80,
-                                    height: 100
+                                    width: 40,
+                                    height: 50
                                 }
                             },
                             move: {
@@ -27169,6 +27234,54 @@ var Home = function (_React$Component) {
                     'h1',
                     { style: titleStyle },
                     'FoodLearning'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { style: ingredientsStyle },
+                    _react2.default.createElement(
+                        'div',
+                        { style: buttonStyle },
+                        _react2.default.createElement(
+                            'form',
+                            { onSubmit: this.addIng },
+                            _react2.default.createElement(
+                                'button',
+                                null,
+                                'Add',
+                                _react2.default.createElement('input', { style: { visibility: 'hidden', position: 'absolute' }, type: 'submit', ref: 'submit', value: '' })
+                            ),
+                            _react2.default.createElement(
+                                'a',
+                                { onClick: this.getResultsFromServer },
+                                _react2.default.createElement(
+                                    'button',
+                                    null,
+                                    ' Go '
+                                )
+                            ),
+                            _react2.default.createElement('input', { className: 'form-control', style: inputStyle, ref: 'ing', placeholder: 'Salade', type: 'text' })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { style: { backgroundColor: '#F0F0F0', marginBottom: '30px', paddind: '10px' } },
+                        _react2.default.createElement(
+                            'h3',
+                            null,
+                            'Ingredients :'
+                        ),
+                        ingListHtml
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { style: { backgroundColor: '#F0F0F0', marginBottom: '30px', paddind: '10px' } },
+                        _react2.default.createElement(
+                            'h3',
+                            null,
+                            'Pairs :'
+                        ),
+                        pairListHtml
+                    )
                 )
             );
         }
@@ -27179,13 +27292,39 @@ var Home = function (_React$Component) {
 
 var titleStyle = {
     position: 'absolute',
-    top: '40%',
+    top: '20%',
     left: '43%',
     color: '#E0E0E0',
     fontFamily: 'Verdana'
 };
 
+var ingredientsStyle = {
+    position: 'absolute',
+    top: '30%',
+    left: '45%',
+    width: '200px',
+    color: '#303030',
+    fontFamily: 'Verdana'
+};
+
+var inputStyle = {
+    marginBottom: '10px',
+    width: '180px'
+};
+
+var ingStyle = {
+    marginBottom: '10px',
+    width: '180px'
+};
+
+var buttonStyle = {
+    textAlign: 'center',
+    margin: '10px'
+};
+
 module.exports = Home;
+
+// <Link to="/results" params={{ payload: this.state.ingList }}>GO</Link>
 
 /***/ }),
 /* 241 */
