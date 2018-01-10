@@ -91,14 +91,19 @@ class Home extends React.Component {
                 params={{
                   particles: {
                     number: {
-                      value: 10
+                      value: 25
                     },
                     size: {
-                      value: 10,
+                      value: 8,
                       random: false
                     },
                     line_linked: {
-                      enable: false
+                      shadow: {
+              					enable: true,
+              					color: "#3CA9D1",
+              					blur: 5
+              				}
+                    //  enable: false
                     },
                     shape: {
                       type: 'image',
@@ -110,7 +115,7 @@ class Home extends React.Component {
                     },
                     move: {
                       out_mode: 'out',
-                      speed: 10,
+                      speed: 5,
                       direction: 'top'
                     }
                   }
