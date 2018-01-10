@@ -4,8 +4,12 @@ import Particles from 'react-particles-js';
 class Home extends React.Component {
     constructor(props) {
         super(props);
+
+        this.addInput = this.addInput.bind(this)
+
         this.state = {
-            model: this.props.model || {greeting: ''}
+            model: this.props.model || {greeting: ''},
+            inputList: []
         }
     }
 
@@ -34,12 +38,22 @@ class Home extends React.Component {
         this.loadModelFromServer();
     }
 
+    addInput(e) {
+      e.preventDefault();
+
+      var inputListTmp = this.state.inputList
+      inputListTmp.push(<input />)
+      this.setState({inputList: inputListTmp})
+    }
+
     render() {
         // <h2>{this.state.model.greeting}</h2>
 
         return (
             <div>
               <h1 style={titleStyle}>FoodLearning</h1>
+              <a onClick={this.addInput}><button>+++</button></a>
+              {this.state.inputList}
             </div>
         );
     }
