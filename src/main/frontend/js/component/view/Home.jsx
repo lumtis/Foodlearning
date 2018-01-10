@@ -5,11 +5,11 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
 
-        this.addInput = this.addInput.bind(this)
+        this.addIng = this.addIng.bind(this)
 
         this.state = {
             model: this.props.model || {greeting: ''},
-            inputList: []
+            ingList: []
         }
     }
 
@@ -38,20 +38,24 @@ class Home extends React.Component {
         this.loadModelFromServer();
     }
 
-    addInput(e) {
-      e.preventDefault();
+    addIng(e) {
+        e.preventDefault();
 
-      var inputListTmp = this.state.inputList
-      inputListTmp.push(<input style={inputStyle}/>)
-      this.setState({inputList: inputListTmp})
+        var ingListTmp = this.state.ingList
+        var ing = this.refs.ing.value;
+        ingListTmp.push(ing)
+        this.setState({ingList: ingListTmp})
     }
 
     render() {
-        // <h2>{this.state.model.greeting}</h2>
+        var ingListHtml = []
+        for (var i = 0; i < this.state.ingList.length; i++) {
+            ingListHtml.push(<p style={ingStyle}>{this.state.ingList[i]}</p>)
+        }
 
         return (
             <div>
-            <Particles
+              <Particles
                 params={{
                   particles: {
                     number: {
@@ -84,10 +88,16 @@ class Home extends React.Component {
               <h1 style={titleStyle}>FoodLearning</h1>
               <div style={ingredientsStyle}>
                 <div style={buttonStyle}>
-                  <a onClick={this.addInput}><button>+++</button></a>
-                  <a><button>Send</button></a>
+                  <form onSubmit={this.addIng}>
+                    <button>Add<input style={{visibility:'hidden', position:'absolute'}} type="submit" ref="submit" value=''/></button>
+                    <a><button>Send</button></a>
+                    <input className="form-control" style={inputStyle} ref="ing" placeholder="Salade" type="text"/>
+                  </form>
                 </div>
-                {this.state.inputList}
+                <div style={{backgroundColor: '#F0F0F0'}}>
+                  <h3>Ingredients :</h3>
+                  {ingListHtml}
+                </div>
               </div>
             </div>
         );
@@ -107,11 +117,16 @@ var ingredientsStyle = {
   top: '30%',
   left: '45%',
   width: '200px',
-  color: '#E0E0E0',
+  color: '#303030',
   fontFamily: 'Verdana'
 }
 
 var inputStyle = {
+  marginBottom: '10px',
+  width:'180px'
+}
+
+var ingStyle = {
   marginBottom: '10px',
   width:'180px'
 }
