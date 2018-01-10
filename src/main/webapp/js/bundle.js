@@ -27089,100 +27089,162 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Home = function (_React$Component) {
-    _inherits(Home, _React$Component);
+  _inherits(Home, _React$Component);
 
-    function Home(props) {
-        _classCallCheck(this, Home);
+  function Home(props) {
+    _classCallCheck(this, Home);
 
-        var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 
-        _this.loadModelFromServer = function () {
-            var url = '/data/home';
-            var header = new Headers({ "Content-type": "application/json" });
-            var init = {
-                method: 'GET',
-                header: header,
-                cache: 'no-cache'
-            };
-            var request = new Request(url, init);
-            fetch(request).then(function (response) {
-                if (response.ok) {
-                    return response.json();
-                }
-                throw new Error('Network response was not ok: status=' + response.status);
-            }).then(function (result) {
-                _this.setState({ model: result });
-            }).catch(function (error) {
-                console.error('Cannot fetch data from the server: url=' + url + ', error=' + error.message);
-            });
-        };
-
-        _this.componentDidMount = function () {
-            _this.loadModelFromServer();
-        };
-
-        _this.state = {
-            model: _this.props.model || { greeting: '' }
-        };
-        return _this;
-    }
-
-    _createClass(Home, [{
-        key: 'render',
-        value: function render() {
-            // <h2>{this.state.model.greeting}</h2>
-
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(_reactParticlesJs2.default, {
-                    params: {
-                        particles: {
-                            number: {
-                                value: 15
-                            },
-                            size: {
-                                value: 20,
-                                random: false
-                            },
-                            line_linked: {
-                                enable: true
-                            },
-                            shape: {
-                                type: 'image',
-                                image: {
-                                    src: 'https://img15.hostingpics.net/pics/494463burger.png',
-                                    width: 80,
-                                    height: 100
-                                }
-                            },
-                            move: {
-                                out_mode: 'out',
-                                speed: 10,
-                                direction: 'top'
-                            }
-                        }
-                    },
-                    style: { position: 'absolute' }
-                }),
-                _react2.default.createElement(
-                    'h1',
-                    { style: titleStyle },
-                    'FoodLearning'
-                )
-            );
+    _this.loadModelFromServer = function () {
+      var url = '/data/home';
+      var header = new Headers({ "Content-type": "application/json" });
+      var init = {
+        method: 'GET',
+        header: header,
+        cache: 'no-cache'
+      };
+      var request = new Request(url, init);
+      fetch(request).then(function (response) {
+        if (response.ok) {
+          return response.json();
         }
-    }]);
+        throw new Error('Network response was not ok: status=' + response.status);
+      }).then(function (result) {
+        _this.setState({ model: result });
+      }).catch(function (error) {
+        console.error('Cannot fetch data from the server: url=' + url + ', error=' + error.message);
+      });
+    };
 
-    return Home;
+    _this.componentDidMount = function () {
+      _this.loadModelFromServer();
+    };
+
+    _this.addInput = _this.addInput.bind(_this);
+
+    _this.state = {
+      model: _this.props.model || { greeting: '' },
+      inputList: []
+    };
+    return _this;
+  }
+
+  _createClass(Home, [{
+    key: 'addInput',
+    value: function addInput(e) {
+      e.preventDefault();
+
+      var inputListTmp = this.state.inputList;
+      inputListTmp.push(_react2.default.createElement('input', { style: inputStyle }));
+      this.setState({ inputList: inputListTmp });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      // <h2>{this.state.model.greeting}</h2>
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_reactParticlesJs2.default, {
+          params: {
+            particles: {
+              number: {
+                value: 25
+              },
+              size: {
+                value: 8,
+                random: false
+              },
+              line_linked: {
+                shadow: {
+                  enable: true,
+                  color: "#3CA9D1",
+                  blur: 5
+                  //  enable: false
+                } },
+              shape: {
+                type: 'image',
+                image: {
+                  src: 'https://img15.hostingpics.net/pics/494463burger.png',
+                  width: 40,
+                  height: 50
+                }
+              },
+              move: {
+                out_mode: 'out',
+                speed: 5,
+                direction: 'top'
+              }
+            }
+          },
+          style: { position: 'absolute' }
+        }),
+        _react2.default.createElement(
+          'h1',
+          { style: titleStyle },
+          'FoodLearning'
+        ),
+        _react2.default.createElement(
+          'div',
+          { style: ingredientsStyle },
+          _react2.default.createElement(
+            'div',
+            { style: buttonStyle },
+            _react2.default.createElement(
+              'a',
+              { onClick: this.addInput },
+              _react2.default.createElement(
+                'button',
+                null,
+                '+++'
+              )
+            ),
+            _react2.default.createElement(
+              'a',
+              null,
+              _react2.default.createElement(
+                'button',
+                null,
+                'Send'
+              )
+            )
+          ),
+          this.state.inputList
+        )
+      );
+    }
+  }]);
+
+  return Home;
 }(_react2.default.Component);
 
 var titleStyle = {
-    position: 'absolute',
-    top: '40%',
-    left: '43%',
-    color: '#E0E0E0',
-    fontFamily: 'Verdana'
+  position: 'absolute',
+  top: '20%',
+  left: '43%',
+  color: '#E0E0E0',
+  fontFamily: 'Verdana'
+};
+
+var ingredientsStyle = {
+  position: 'absolute',
+  top: '30%',
+  left: '45%',
+  width: '200px',
+  color: '#E0E0E0',
+  fontFamily: 'Verdana'
+};
+
+var inputStyle = {
+  marginBottom: '10px',
+  width: '180px'
+};
+
+var buttonStyle = {
+  textAlign: 'center',
+  margin: '10px'
 };
 
 module.exports = Home;
