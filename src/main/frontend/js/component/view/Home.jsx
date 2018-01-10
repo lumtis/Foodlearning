@@ -42,7 +42,7 @@ class Home extends React.Component {
       e.preventDefault();
 
       var inputListTmp = this.state.inputList
-      inputListTmp.push(<input />)
+      inputListTmp.push(<input style={inputStyle}/>)
       this.setState({inputList: inputListTmp})
     }
 
@@ -51,9 +51,44 @@ class Home extends React.Component {
 
         return (
             <div>
+            <Particles
+                params={{
+                  particles: {
+                    number: {
+                      value: 10
+                    },
+                    size: {
+                      value: 10,
+                      random: false
+                    },
+                    line_linked: {
+                      enable: false
+                    },
+                    shape: {
+                      type: 'image',
+                      image: {
+                        src: 'https://img15.hostingpics.net/pics/494463burger.png',
+                        width: 40,
+                        height: 50
+                      }
+                    },
+                    move: {
+                      out_mode: 'out',
+                      speed: 10,
+                      direction: 'top'
+                    }
+                  }
+                }}
+                style={{position: 'absolute'}}
+              />
               <h1 style={titleStyle}>FoodLearning</h1>
-              <a onClick={this.addInput}><button>+++</button></a>
-              {this.state.inputList}
+              <div style={ingredientsStyle}>
+                <div style={buttonStyle}>
+                  <a onClick={this.addInput}><button>+++</button></a>
+                  <a><button>Send</button></a>
+                </div>
+                {this.state.inputList}
+              </div>
             </div>
         );
     }
@@ -61,10 +96,30 @@ class Home extends React.Component {
 
 var titleStyle = {
   position: 'absolute',
-  top: '40%',
+  top: '20%',
   left: '43%',
   color: '#E0E0E0',
   fontFamily: 'Verdana'
 }
+
+var ingredientsStyle = {
+  position: 'absolute',
+  top: '30%',
+  left: '45%',
+  width: '200px',
+  color: '#E0E0E0',
+  fontFamily: 'Verdana'
+}
+
+var inputStyle = {
+  marginBottom: '10px',
+  width:'180px'
+}
+
+var buttonStyle = {
+  textAlign: 'center',
+  margin: '10px'
+}
+
 
 module.exports = Home;
