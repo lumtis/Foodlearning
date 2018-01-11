@@ -32,9 +32,13 @@ trait ServerRoutes extends JsonSupport {
   private val home: Route = {
     pathEndOrSingleSlash {
       get {
+
+
+
         val model = HomeViewModel("This is Home page").toJson.compactPrint
         val content = nashorn.invokeMethod[String]("frontend", "renderServer", "/", model)
         val html = views.html.index.render(content, model).toString()
+        //val logTest1 = CassandraRequest.logValeurs()
         log.info(s"Request: route=/, method=get")
         complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, html))
       }
