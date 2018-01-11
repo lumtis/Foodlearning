@@ -1,13 +1,15 @@
 package com.nudemeth.example.server
 
 import akka.actor.ActorSystem
-import akka.http.scaladsl.Http
+import akka.actor.ActorLogging
 import akka.stream.ActorMaterializer
+import akka.http.scaladsl.Http
 import scala.concurrent.{ExecutionContextExecutor, Future}
 import scala.io.StdIn
-//import akka.cluster.Cluster
-//import akka.cluster.ClusterEvent._
-
+import akka.cluster.Cluster
+import akka.cluster.ClusterEvent._
+import com.typesafe.config.ConfigFactory
+import com.datastax.driver.core.SimpleStatement
 
 object WebServer extends App {
   private val server = WebServer()
@@ -26,9 +28,9 @@ final case class WebServer() extends ServerRoutes {
 
   private var server: Future[Http.ServerBinding] = _
 
-  implicit val session: Cluster = Cluster.builder
-    .addContactPoint("127.0.0.1").withPort(9042)
-    .build.connect()
+  //implicit val session = Cluster.builder.addContactPoint("127.0.0.1").withPort(9042).build.connect()
+
+
 
   def start(): Unit = {
     server = Http().bindAndHandle(route, "localhost", 8080)
@@ -37,9 +39,10 @@ final case class WebServer() extends ServerRoutes {
 
   def requete(): Unit = {
 
+    val stmt = new SimpleStatement("SELECT * FROM pairs").setFetchSize(20)
 
-
-    log.info("BOI");
+    val rows = CassandraSource(stmt)  //.runWith(Sink.seq)
+    log.info("aigh");
   }
 
   def stop(): Unit = {
