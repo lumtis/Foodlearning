@@ -16,7 +16,8 @@ libraryDependencies ++= Seq(
   //"com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % "0.3",
 //  "com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % "0.1-RC1",
   "com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % "0.15.1",
-  "com.typesafe.akka" %% "akka-cluster" % "2.5.4"
+  "com.typesafe.akka" %% "akka-cluster" % "2.5.4",
+  "com.typesafe.akka" % "akka-cluster-metrics_2.12" % "2.5.5"
 )
 
 resourceGenerators.in(Compile) += buildFrontEndResource.init
