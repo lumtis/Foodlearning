@@ -47,10 +47,7 @@ final case class WebServer() extends ServerRoutes {
   }
 
   def requete(): Unit = {
-
     val stmt = new SimpleStatement("SELECT * FROM pairs").setFetchSize(20)
-
-
     val rows = CassandraSource(stmt).runWith(Sink.seq)
     log.info("aigh");
   }
