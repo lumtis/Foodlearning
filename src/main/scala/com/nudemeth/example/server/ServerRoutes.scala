@@ -5,6 +5,9 @@ import akka.event.{Logging, LoggingAdapter}
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
+import akka.stream.scaladsl.{Source,Sink}
+
+
 import com.nudemeth.example.engine._
 import com.nudemeth.example.viewmodel._
 import spray.json._
@@ -12,6 +15,7 @@ import spray.json._
 
 trait ServerRoutes extends JsonSupport {
   implicit def system: ActorSystem
+
   def log: LoggingAdapter = Logging(system, this.getClass)
 
   lazy val route: Route = concat(
@@ -33,9 +37,13 @@ trait ServerRoutes extends JsonSupport {
   private val home: Route = {
     pathEndOrSingleSlash {
       get {
+
+
+
         val model = HomeViewModel("This is Home page").toJson.compactPrint
         val content = nashorn.invokeMethod[String]("frontend", "renderServer", "/", model)
         val html = views.html.index.render(content, model).toString()
+        //val logTest1 = CassandraRequest.logValeurs()
         log.info(s"Request: route=/, method=get")
         complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, html))
       }

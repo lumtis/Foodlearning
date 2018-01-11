@@ -394,7 +394,7 @@ module.exports = warning;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -849,7 +849,7 @@ module.exports = warning;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -1232,7 +1232,7 @@ module.exports = ReactComponentTreeHook;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -1262,7 +1262,7 @@ module.exports = { debugTool: debugTool };
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 function makeEmptyFunction(arg) {
@@ -1651,7 +1651,7 @@ module.exports = invariant;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -2652,7 +2652,7 @@ module.exports = ReactElement;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -2938,7 +2938,7 @@ module.exports = ReactReconciler;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -3790,7 +3790,7 @@ var createPath = function createPath(location) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -3820,7 +3820,7 @@ module.exports = canDefineProperty;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -4077,7 +4077,7 @@ module.exports = EventPluginRegistry;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -5527,7 +5527,7 @@ module.exports = EventPluginUtils;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -6186,7 +6186,7 @@ module.exports = LinkedValueUtils;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -6368,7 +6368,7 @@ module.exports = instantiateReactComponent;
  * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
- *
+ * 
  */
 
 /*eslint-disable no-self-compare */
@@ -6483,7 +6483,7 @@ module.exports = shouldUpdateReactComponent;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -7936,7 +7936,7 @@ module.exports = ReactNoopUpdateQueue;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -7959,7 +7959,7 @@ module.exports = REACT_ELEMENT_TYPE;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -8948,7 +8948,7 @@ module.exports = {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -9010,7 +9010,7 @@ module.exports = accumulateInto;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -9080,7 +9080,7 @@ module.exports = getTextContentAccessor;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -9203,7 +9203,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -9354,7 +9354,7 @@ module.exports = inputValueTracking;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -9918,7 +9918,7 @@ module.exports = DOMPropertyOperations;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -10142,7 +10142,7 @@ module.exports = ReactDOMSelect;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -13314,7 +13314,7 @@ module.exports = ReactChildren;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -13610,7 +13610,7 @@ module.exports = traverseAllChildren;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -13936,7 +13936,7 @@ module.exports = checkReactTypeSpec;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -13965,7 +13965,7 @@ module.exports = ReactPropTypeLocationNames;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -16118,7 +16118,7 @@ module.exports = ChangeEventPlugin;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -16210,7 +16210,7 @@ module.exports = ReactRef;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -16307,7 +16307,7 @@ module.exports = ReactOwner;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -16672,7 +16672,7 @@ module.exports = ReactDebugTool;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -16713,7 +16713,7 @@ module.exports = ReactInvalidSetStateWarningHook;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -19121,7 +19121,7 @@ module.exports = hyphenate;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  * @typechecks static-only
  */
 
@@ -21505,7 +21505,7 @@ module.exports = checkReactTypeSpec;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -21534,7 +21534,7 @@ module.exports = ReactPropTypeLocationNames;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -21558,7 +21558,7 @@ module.exports = getNextDebugID;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -21581,7 +21581,7 @@ module.exports = REACT_ELEMENT_TYPE;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -21625,7 +21625,7 @@ module.exports = getIteratorFn;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -21705,7 +21705,7 @@ module.exports = flattenChildren;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -22930,7 +22930,7 @@ module.exports = getNodeForCharacterOffset;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 var isTextNode = __webpack_require__(192);
@@ -23523,7 +23523,7 @@ module.exports = SelectEventPlugin;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -24282,7 +24282,7 @@ module.exports = ReactDOMFeatureFlags;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- *
+ * 
  */
 
 
@@ -27091,37 +27091,37 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Home = function (_React$Component) {
-  _inherits(Home, _React$Component);
+    _inherits(Home, _React$Component);
 
-  function Home(props) {
-    _classCallCheck(this, Home);
+    function Home(props) {
+        _classCallCheck(this, Home);
 
-    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 
-    _this.loadModelFromServer = function () {
-      var url = '/data/home';
-      var header = new Headers({ "Content-type": "application/json" });
-      var init = {
-        method: 'GET',
-        header: header,
-        cache: 'no-cache'
-      };
-      var request = new Request(url, init);
-      fetch(request).then(function (response) {
-        if (response.ok) {
-          return response.json();
-        }
-        throw new Error('Network response was not ok: status=' + response.status);
-      }).then(function (result) {
-        _this.setState({ model: result });
-      }).catch(function (error) {
-        console.error('Cannot fetch data from the server: url=' + url + ', error=' + error.message);
-      });
-    };
+        _this.loadModelFromServer = function () {
+            var url = '/data/home';
+            var header = new Headers({ "Content-type": "application/json" });
+            var init = {
+                method: 'GET',
+                header: header,
+                cache: 'no-cache'
+            };
+            var request = new Request(url, init);
+            fetch(request).then(function (response) {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Network response was not ok: status=' + response.status);
+            }).then(function (result) {
+                _this.setState({ model: result });
+            }).catch(function (error) {
+                console.error('Cannot fetch data from the server: url=' + url + ', error=' + error.message);
+            });
+        };
 
-    _this.componentDidMount = function () {
-      _this.loadModelFromServer();
-    };
+        _this.componentDidMount = function () {
+            _this.loadModelFromServer();
+        };
 
         _this.addIng = _this.addIng.bind(_this);
         _this.getResultsFromServer = _this.getResultsFromServer.bind(_this);
@@ -27204,15 +27204,19 @@ var Home = function (_React$Component) {
                     params: {
                         particles: {
                             number: {
-                                value: 10
+                                value: 25
                             },
                             size: {
-                                value: 10,
+                                value: 8,
                                 random: false
                             },
                             line_linked: {
-                                enable: false
-                            },
+                                shadow: {
+                                    enable: true,
+                                    color: "#3CA9D1",
+                                    blur: 5
+                                    //  enable: false
+                                } },
                             shape: {
                                 type: 'image',
                                 image: {
@@ -27223,7 +27227,7 @@ var Home = function (_React$Component) {
                             },
                             move: {
                                 out_mode: 'out',
-                                speed: 10,
+                                speed: 5,
                                 direction: 'top'
                             }
                         }
@@ -27287,34 +27291,15 @@ var Home = function (_React$Component) {
         }
     }]);
 
-  return Home;
+    return Home;
 }(_react2.default.Component);
 
 var titleStyle = {
-  position: 'absolute',
-  top: '20%',
-  left: '43%',
-  color: '#E0E0E0',
-  fontFamily: 'Verdana'
-};
-
-var ingredientsStyle = {
-  position: 'absolute',
-  top: '30%',
-  left: '45%',
-  width: '200px',
-  color: '#E0E0E0',
-  fontFamily: 'Verdana'
-};
-
-var inputStyle = {
-  marginBottom: '10px',
-  width: '180px'
-};
-
-var buttonStyle = {
-  textAlign: 'center',
-  margin: '10px'
+    position: 'absolute',
+    top: '20%',
+    left: '43%',
+    color: '#E0E0E0',
+    fontFamily: 'Verdana'
 };
 
 var ingredientsStyle = {
@@ -27432,7 +27417,7 @@ module.exports = Home;
             function e(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var i = t[a];
-                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0),
+                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), 
                     Object.defineProperty(e, i.key, i);
                 }
             }
@@ -27779,7 +27764,7 @@ module.exports = Home;
             }
             function ce(e) {
                 var t = e.length, a = e.constructor(t);
-                return t && "string" == typeof e[0] && bt.call(e, "index") && (a.index = e.index,
+                return t && "string" == typeof e[0] && bt.call(e, "index") && (a.index = e.index, 
                 a.input = e.input), a;
             }
             function le(e) {
@@ -27890,16 +27875,16 @@ module.exports = Home;
                 return !1;
             }
             var Oe = 200, ze = "__lodash_hash_undefined__", Fe = 9007199254740991, Ee = "[object Arguments]", Se = "[object Boolean]", Ie = "[object Date]", Ce = "[object Function]", Le = "[object GeneratorFunction]", Te = "[object Map]", Re = "[object Number]", De = "[object Object]", qe = "[object RegExp]", We = "[object Set]", Ue = "[object String]", Be = "[object Symbol]", $e = "[object ArrayBuffer]", Xe = "[object DataView]", Ne = "[object Float32Array]", Ye = "[object Float64Array]", He = "[object Int8Array]", Ve = "[object Int16Array]", Ge = "[object Int32Array]", Je = "[object Uint8Array]", Ke = "[object Uint8ClampedArray]", Qe = "[object Uint16Array]", Ze = "[object Uint32Array]", et = /[\\^$.*+?()[\]{}|]/g, tt = /\w*$/, at = /^\[object .+?Constructor\]$/, it = /^(?:0|[1-9]\d*)$/, rt = {};
-            rt[Ee] = rt["[object Array]"] = rt[$e] = rt[Xe] = rt[Se] = rt[Ie] = rt[Ne] = rt[Ye] = rt[He] = rt[Ve] = rt[Ge] = rt[Te] = rt[Re] = rt[De] = rt[qe] = rt[We] = rt[Ue] = rt[Be] = rt[Je] = rt[Ke] = rt[Qe] = rt[Ze] = !0,
+            rt[Ee] = rt["[object Array]"] = rt[$e] = rt[Xe] = rt[Se] = rt[Ie] = rt[Ne] = rt[Ye] = rt[He] = rt[Ve] = rt[Ge] = rt[Te] = rt[Re] = rt[De] = rt[qe] = rt[We] = rt[Ue] = rt[Be] = rt[Je] = rt[Ke] = rt[Qe] = rt[Ze] = !0, 
             rt["[object Error]"] = rt[Ce] = rt["[object WeakMap]"] = !1;
             var nt = "object" == typeof e && e && e.Object === Object && e, st = "object" == typeof self && self && self.Object === Object && self, ot = nt || st || Function("return this")(), ct = "object" == typeof t && t && !t.nodeType && t, lt = ct && "object" == typeof a && a && !a.nodeType && a, ut = lt && lt.exports === ct, pt = Array.prototype, ht = Function.prototype, vt = Object.prototype, mt = ot["__core-js_shared__"], dt = function() {
                 var e = /[^.]+$/.exec(mt && mt.keys && mt.keys.IE_PROTO || "");
                 return e ? "Symbol(src)_1." + e : "";
             }(), yt = ht.toString, bt = vt.hasOwnProperty, ft = vt.toString, _t = RegExp("^" + yt.call(bt).replace(et, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"), gt = ut ? ot.Buffer : void 0, xt = ot.Symbol, wt = ot.Uint8Array, kt = h(Object.getPrototypeOf, Object), jt = Object.create, Pt = vt.propertyIsEnumerable, Mt = pt.splice, At = Object.getOwnPropertySymbols, Ot = gt ? gt.isBuffer : void 0, zt = h(Object.keys, Object), Ft = oe(ot, "DataView"), Et = oe(ot, "Map"), St = oe(ot, "Promise"), It = oe(ot, "Set"), Ct = oe(ot, "WeakMap"), Lt = oe(Object, "create"), Tt = de(Ft), Rt = de(Et), Dt = de(St), qt = de(It), Wt = de(Ct), Ut = xt ? xt.prototype : void 0, Bt = Ut ? Ut.valueOf : void 0;
-            m.prototype.clear = d, m.prototype.delete = y, m.prototype.get = b, m.prototype.has = f,
-            m.prototype.set = _, g.prototype.clear = x, g.prototype.delete = w, g.prototype.get = k,
-            g.prototype.has = j, g.prototype.set = P, M.prototype.clear = A, M.prototype.delete = O,
-            M.prototype.get = z, M.prototype.has = F, M.prototype.set = E, S.prototype.clear = I,
+            m.prototype.clear = d, m.prototype.delete = y, m.prototype.get = b, m.prototype.has = f, 
+            m.prototype.set = _, g.prototype.clear = x, g.prototype.delete = w, g.prototype.get = k, 
+            g.prototype.has = j, g.prototype.set = P, M.prototype.clear = A, M.prototype.delete = O, 
+            M.prototype.get = z, M.prototype.has = F, M.prototype.set = E, S.prototype.clear = I, 
             S.prototype.delete = C, S.prototype.get = L, S.prototype.has = T, S.prototype.set = R;
             var $t = At ? h(At, Object) : Me, Xt = N;
             (Ft && Xt(new Ft(new ArrayBuffer(1))) != Xe || Et && Xt(new Et()) != Te || St && "[object Promise]" != Xt(St.resolve()) || It && Xt(new It()) != We || Ct && "[object WeakMap]" != Xt(new Ct())) && (Xt = function(e) {
@@ -27938,7 +27923,7 @@ module.exports = Home;
         e.exports = a;
     }, function(e, t) {
         e.exports = function(e) {
-            return e.webpackPolyfill || (e.deprecate = function() {}, e.paths = [], e.children || (e.children = []),
+            return e.webpackPolyfill || (e.deprecate = function() {}, e.paths = [], e.children || (e.children = []), 
             Object.defineProperty(e, "loaded", {
                 enumerable: !0,
                 get: function() {
@@ -28097,7 +28082,7 @@ module.exports = Home;
         }, t.isInArray = function(e, t) {
             return t.indexOf(e) > -1;
         }, t.deepExtend = function(e, a) {
-            for (var i in a) a[i] && a[i].constructor && a[i].constructor === Object ? (e[i] = e[i] || {},
+            for (var i in a) a[i] && a[i].constructor && a[i].constructor === Object ? (e[i] = e[i] || {}, 
             t.deepExtend(e[i], a[i])) : e[i] = a[i];
             return e;
         }, t.getColor = function(e) {
@@ -28135,7 +28120,7 @@ module.exports = Home;
             function e(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var i = t[a];
-                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0),
+                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), 
                     Object.defineProperty(e, i.key, i);
                 }
             }
@@ -28158,9 +28143,9 @@ module.exports = Home;
                         var o = this.params.particles.line_linked.opacity - r / (1 / this.params.particles.line_linked.opacity) / this.params.particles.line_linked.distance;
                         if (o > 0) {
                             var c = this.params.particles.line_linked.color_rgb_line, l = c.r, u = c.g, p = c.b;
-                            n.ctx.save(), n.ctx.strokeStyle = "rgba( " + l + ", " + u + ", " + p + ", " + o + " )",
-                            n.ctx.lineWidth = this.params.particles.line_linked.width, n.ctx.beginPath(), s.shadow.enable && (n.ctx.shadowBlur = s.shadow.blur,
-                            n.ctx.shadowColor = s.shadow.color), n.ctx.moveTo(e.x, e.y), n.ctx.lineTo(t.x, t.y),
+                            n.ctx.save(), n.ctx.strokeStyle = "rgba( " + l + ", " + u + ", " + p + ", " + o + " )", 
+                            n.ctx.lineWidth = this.params.particles.line_linked.width, n.ctx.beginPath(), s.shadow.enable && (n.ctx.shadowBlur = s.shadow.blur, 
+                            n.ctx.shadowColor = s.shadow.color), n.ctx.moveTo(e.x, e.y), n.ctx.lineTo(t.x, t.y), 
                             n.ctx.stroke(), n.ctx.closePath(), n.ctx.restore();
                         }
                     }
@@ -28178,7 +28163,7 @@ module.exports = Home;
                 key: "bounceParticles",
                 value: function(e, t) {
                     var a = e.x - t.x, i = e.y - t.y;
-                    Math.sqrt(a * a + i * i) <= e.radius + t.radius && (e.vx = -e.vx, e.vy = -e.vy,
+                    Math.sqrt(a * a + i * i) <= e.radius + t.radius && (e.vx = -e.vx, e.vy = -e.vy, 
                     t.vx = -t.vx, t.vy = -t.vy);
                 }
             } ]), e;
@@ -28193,7 +28178,7 @@ module.exports = Home;
             function e(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var i = t[a];
-                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0),
+                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), 
                     Object.defineProperty(e, i.key, i);
                 }
             }
@@ -28253,8 +28238,8 @@ module.exports = Home;
                         "mouseleave" == this.params.interactivity.status && c();
                     } else if (this.params.interactivity.events.onclick.enable && n.isInArray("bubble", this.params.interactivity.events.onclick.mode) && a.bubble_clicking) {
                         var m = e.x - this.params.interactivity.mouse.click_pos_x, d = e.y - this.params.interactivity.mouse.click_pos_y, y = Math.sqrt(m * m + d * d), b = (new Date().getTime() - this.params.interactivity.mouse.click_time) / 1e3;
-                        b > this.params.interactivity.modes.bubble.duration && (a.bubble_duration_end = !0),
-                        b > 2 * this.params.interactivity.modes.bubble.duration && (a.bubble_clicking = !1,
+                        b > this.params.interactivity.modes.bubble.duration && (a.bubble_duration_end = !0), 
+                        b > 2 * this.params.interactivity.modes.bubble.duration && (a.bubble_clicking = !1, 
                         a.bubble_duration_end = !1);
                         var f = function(i, r, n, s, o) {
                             if (i != r) if (a.bubble_duration_end) {
@@ -28269,7 +28254,7 @@ module.exports = Home;
                                 }
                             } else "size" == o && (e.radius_bubble = void 0), "opacity" == o && (e.opacity_bubble = void 0);
                         };
-                        a.bubble_clicking && (f(this.params.interactivity.modes.bubble.size, this.params.particles.size.value, e.radius_bubble, e.radius, "size"),
+                        a.bubble_clicking && (f(this.params.interactivity.modes.bubble.size, this.params.particles.size.value, e.radius_bubble, e.radius, "size"), 
                         f(this.params.interactivity.modes.bubble.opacity, this.params.particles.opacity.value, e.opacity_bubble, e.opacity, "opacity"));
                     }
                 }
@@ -28285,9 +28270,9 @@ module.exports = Home;
                             x: e.x + l.x * p,
                             y: e.y + l.y * p
                         };
-                        "bounce" == this.params.particles.move.out_mode ? (h.x - e.radius > 0 && h.x + e.radius < i.width && (e.x = h.x),
+                        "bounce" == this.params.particles.move.out_mode ? (h.x - e.radius > 0 && h.x + e.radius < i.width && (e.x = h.x), 
                         h.y - e.radius > 0 && h.y + e.radius < i.height && (e.y = h.y)) : (e.x = h.x, e.y = h.y);
-                    } else if (this.params.interactivity.events.onclick.enable && n.isInArray("repulse", this.params.interactivity.events.onclick.mode)) if (r.repulse_finish || ++r.repulse_count == this.params.particles.array.length && (r.repulse_finish = !0),
+                    } else if (this.params.interactivity.events.onclick.enable && n.isInArray("repulse", this.params.interactivity.events.onclick.mode)) if (r.repulse_finish || ++r.repulse_count == this.params.particles.array.length && (r.repulse_finish = !0), 
                     r.repulse_clicking) {
                         var v = Math.pow(this.params.interactivity.modes.repulse.distance / 6, 3), m = this.params.interactivity.mouse.click_pos_x - e.x, d = this.params.interactivity.mouse.click_pos_y - e.y, y = m * m + d * d, b = -v / y * 1;
                         y <= v && function() {
@@ -28297,7 +28282,7 @@ module.exports = Home;
                                     x: e.x + e.vx,
                                     y: e.y + e.vy
                                 };
-                                r.x + e.radius > i.width ? e.vx = -e.vx : r.x - e.radius < 0 && (e.vx = -e.vx),
+                                r.x + e.radius > i.width ? e.vx = -e.vx : r.x - e.radius < 0 && (e.vx = -e.vx), 
                                 r.y + e.radius > i.height ? e.vy = -e.vy : r.y - e.radius < 0 && (e.vy = -e.vy);
                             }
                         }();
@@ -28313,8 +28298,8 @@ module.exports = Home;
                             var c = i.modes.grab, l = c.line_linked.opacity - o / (1 / c.line_linked.opacity) / c.distance;
                             if (l > 0) {
                                 var u = r.line_linked.color_rgb_line, p = u.r, h = u.g, v = u.b;
-                                t.ctx.strokeStyle = "rgba( " + p + ", " + h + ", " + v + ", " + l + " )", t.ctx.lineWidth = r.line_linked.width,
-                                t.ctx.beginPath(), t.ctx.moveTo(e.x, e.y), t.ctx.lineTo(i.mouse.pos_x, i.mouse.pos_y),
+                                t.ctx.strokeStyle = "rgba( " + p + ", " + h + ", " + v + ", " + l + " )", t.ctx.lineWidth = r.line_linked.width, 
+                                t.ctx.beginPath(), t.ctx.moveTo(e.x, e.y), t.ctx.lineTo(i.mouse.pos_x, i.mouse.pos_y), 
                                 t.ctx.stroke(), t.ctx.closePath();
                             }
                         }
@@ -28336,7 +28321,7 @@ module.exports = Home;
             function e(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var i = t[a];
-                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0),
+                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), 
                     Object.defineProperty(e, i.key, i);
                 }
             }
@@ -28349,23 +28334,23 @@ module.exports = Home;
         });
         var s = a(0), o = function() {
             function e(t, a, r, n, s) {
-                i(this, e), this.params = t, this.library = a, this.setupSize(), this.setupPosition(s),
+                i(this, e), this.params = t, this.library = a, this.setupSize(), this.setupPosition(s), 
                 this.setupColor(r), this.setupOpacity(), this.setupAnimation();
             }
             return n(e, [ {
                 key: "setupSize",
                 value: function() {
-                    this.radius = (this.params.particles.size.random ? Math.random() : 1) * this.params.particles.size.value,
-                    this.params.particles.size.anim.enable && (this.size_status = !1, this.vs = this.params.particles.size.anim.speed / 100,
+                    this.radius = (this.params.particles.size.random ? Math.random() : 1) * this.params.particles.size.value, 
+                    this.params.particles.size.anim.enable && (this.size_status = !1, this.vs = this.params.particles.size.anim.speed / 100, 
                     this.params.particles.size.anim.sync || (this.vs = this.vs * Math.random()));
                 }
             }, {
                 key: "setupPosition",
                 value: function(e) {
                     var t = this.library, a = t.canvas, i = t.vendors;
-                    this.x = e ? e.x : Math.random() * a.width, this.y = e ? e.y : Math.random() * a.height,
-                    this.x > a.width - 2 * this.radius ? this.x = this.x - this.radius : this.x < 2 * this.radius && (this.x = this.x + this.radius),
-                    this.y > a.height - 2 * this.radius ? this.y = this.y - this.radius : this.y < 2 * this.radius && (this.y = this.y + this.radius),
+                    this.x = e ? e.x : Math.random() * a.width, this.y = e ? e.y : Math.random() * a.height, 
+                    this.x > a.width - 2 * this.radius ? this.x = this.x - this.radius : this.x < 2 * this.radius && (this.x = this.x + this.radius), 
+                    this.y > a.height - 2 * this.radius ? this.y = this.y - this.radius : this.y < 2 * this.radius && (this.y = this.y + this.radius), 
                     this.params.particles.move.bounce && i.checkOverlap(this, e);
                 }
             }, {
@@ -28376,8 +28361,8 @@ module.exports = Home;
             }, {
                 key: "setupOpacity",
                 value: function() {
-                    this.opacity = (this.params.particles.opacity.random ? Math.random() : 1) * this.params.particles.opacity.value,
-                    this.params.particles.opacity.anim.enable && (this.opacity_status = !1, this.vo = this.params.particles.opacity.anim.speed / 100,
+                    this.opacity = (this.params.particles.opacity.random ? Math.random() : 1) * this.params.particles.opacity.value, 
+                    this.params.particles.opacity.anim.enable && (this.opacity_status = !1, this.vo = this.params.particles.opacity.anim.speed / 100, 
                     this.params.particles.opacity.anim.sync || (this.vo = this.vo * Math.random()));
                 }
             }, {
@@ -28447,8 +28432,8 @@ module.exports = Home;
                             y: 0
                         };
                     }
-                    this.params.particles.move.straight ? (this.vx = i.x, this.vy = i.y, this.params.particles.move.random && (this.vx = this.vx * Math.random(),
-                    this.vy = this.vy * Math.random())) : (this.vx = i.x + Math.random() - .5, this.vy = i.y + Math.random() - .5),
+                    this.params.particles.move.straight ? (this.vx = i.x, this.vy = i.y, this.params.particles.move.random && (this.vx = this.vx * Math.random(), 
+                    this.vy = this.vy * Math.random())) : (this.vx = i.x + Math.random() - .5, this.vy = i.y + Math.random() - .5), 
                     this.vx_i = this.vx, this.vy_i = this.vy;
                     var n = this.params.particles.shape.type;
                     if ("object" == (void 0 === n ? "undefined" : r(n))) {
@@ -28462,14 +28447,14 @@ module.exports = Home;
                         this.img = {
                             src: o.image.src,
                             ratio: o.image.width / o.image.height
-                        }, this.img.ratio || (this.img.ratio = 1), "svg" == t.img_type && void 0 != t.source_svg && (a.createSvgImg(this),
+                        }, this.img.ratio || (this.img.ratio = 1), "svg" == t.img_type && void 0 != t.source_svg && (a.createSvgImg(this), 
                         t.pushing && (this.img.loaded = !1));
                     }
                 }
             }, {
                 key: "draw",
                 value: function() {
-                    var e = this, t = this.library, a = t.canvas, i = t.tmp, r = t.vendors, n = (this.params.particles,
+                    var e = this, t = this.library, a = t.canvas, i = t.tmp, r = t.vendors, n = (this.params.particles, 
                     void 0);
                     n = void 0 != this.radius_bubble ? this.radius_bubble : this.radius;
                     var s = void 0;
@@ -28509,7 +28494,7 @@ module.exports = Home;
                             a.ctx.drawImage(t, e.x - n, e.y - n, 2 * n, 2 * n / e.img.ratio);
                         }(u);
                     }
-                    a.ctx.closePath(), this.params.particles.shape.stroke.width > 0 && (a.ctx.strokeStyle = this.params.particles.shape.stroke.color,
+                    a.ctx.closePath(), this.params.particles.shape.stroke.width > 0 && (a.ctx.strokeStyle = this.params.particles.shape.stroke.color, 
                     a.ctx.lineWidth = this.params.particles.shape.stroke.width, a.ctx.stroke()), a.ctx.fill();
                 }
             } ]), e;
@@ -28524,7 +28509,7 @@ module.exports = Home;
             function e(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var i = t[a];
-                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0),
+                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), 
                     Object.defineProperty(e, i.key, i);
                 }
             }
@@ -28537,7 +28522,7 @@ module.exports = Home;
         });
         var n = a(0), s = function() {
             function e(t, a, r, n, s) {
-                i(this, e), this.params = t, this.interact = a, this.modes = r, this.vendors = n,
+                i(this, e), this.params = t, this.interact = a, this.modes = r, this.vendors = n, 
                 this.library = s;
             }
             return r(e, [ {
@@ -28554,10 +28539,10 @@ module.exports = Home;
                             var o = e.params.particles.move.speed / 2;
                             t.x += t.vx * o, t.y += t.vy * o;
                         }
-                        e.params.particles.opacity.anim.enable && (1 == t.opacity_status ? (t.opacity >= e.params.particles.opacity.value && (t.opacity_status = !1),
-                        t.opacity += t.vo) : (t.opacity <= e.params.particles.opacity.anim.opacity_min && (t.opacity_status = !0),
-                        t.opacity -= t.vo), t.opacity < 0 && (t.opacity = 0)), e.params.particles.size.anim.enable && (1 == t.size_status ? (t.radius >= e.params.particles.size.value && (t.size_status = !1),
-                        t.radius += t.vs) : (t.radius <= e.params.particles.size.anim.size_min && (t.size_status = !0),
+                        e.params.particles.opacity.anim.enable && (1 == t.opacity_status ? (t.opacity >= e.params.particles.opacity.value && (t.opacity_status = !1), 
+                        t.opacity += t.vo) : (t.opacity <= e.params.particles.opacity.anim.opacity_min && (t.opacity_status = !0), 
+                        t.opacity -= t.vo), t.opacity < 0 && (t.opacity = 0)), e.params.particles.size.anim.enable && (1 == t.size_status ? (t.radius >= e.params.particles.size.value && (t.size_status = !1), 
+                        t.radius += t.vs) : (t.radius <= e.params.particles.size.anim.size_min && (t.size_status = !0), 
                         t.radius -= t.vs), t.radius < 0 && (t.radius = 0));
                         var c = void 0;
                         switch (c = "bounce" == e.params.particles.move.out_mode ? {
@@ -28570,19 +28555,19 @@ module.exports = Home;
                             x_right: a.width + t.radius,
                             y_top: -t.radius,
                             y_bottom: a.height + t.radius
-                        }, t.x - t.radius > a.width ? (t.x = c.x_left, t.y = Math.random() * a.height) : t.x + t.radius < 0 && (t.x = c.x_right,
-                        t.y = Math.random() * a.height), t.y - t.radius > a.height ? (t.y = c.y_top, t.x = Math.random() * a.width) : t.y + t.radius < 0 && (t.y = c.y_bottom,
+                        }, t.x - t.radius > a.width ? (t.x = c.x_left, t.y = Math.random() * a.height) : t.x + t.radius < 0 && (t.x = c.x_right, 
+                        t.y = Math.random() * a.height), t.y - t.radius > a.height ? (t.y = c.y_top, t.x = Math.random() * a.width) : t.y + t.radius < 0 && (t.y = c.y_bottom, 
                         t.x = Math.random() * a.width), e.params.particles.move.out_mode) {
                           case "bounce":
-                            t.x + t.radius > a.width ? t.vx = -t.vx : t.x - t.radius < 0 && (t.vx = -t.vx),
+                            t.x + t.radius > a.width ? t.vx = -t.vx : t.x - t.radius < 0 && (t.vx = -t.vx), 
                             t.y + t.radius > a.height ? t.vy = -t.vy : t.y - t.radius < 0 && (t.vy = -t.vy);
                         }
-                        if (n.isInArray("grab", e.params.interactivity.events.onhover.mode) && r.grabParticle(t),
-                        (n.isInArray("bubble", e.params.interactivity.events.onhover.mode) || n.isInArray("bubble", e.params.interactivity.events.onclick.mode)) && r.bubbleParticle(t),
-                        (n.isInArray("repulse", e.params.interactivity.events.onhover.mode) || n.isInArray("repulse", e.params.interactivity.events.onclick.mode)) && r.repulseParticle(t),
+                        if (n.isInArray("grab", e.params.interactivity.events.onhover.mode) && r.grabParticle(t), 
+                        (n.isInArray("bubble", e.params.interactivity.events.onhover.mode) || n.isInArray("bubble", e.params.interactivity.events.onclick.mode)) && r.bubbleParticle(t), 
+                        (n.isInArray("repulse", e.params.interactivity.events.onhover.mode) || n.isInArray("repulse", e.params.interactivity.events.onclick.mode)) && r.repulseParticle(t), 
                         e.params.particles.line_linked.enable || e.params.particles.move.attract.enable) for (var l = s + 1; l < e.params.particles.array.length; l++) {
                             var u = e.params.particles.array[l];
-                            e.params.particles.line_linked.enable && i.linkParticles(t, u), e.params.particles.move.attract.enable && i.attractParticles(t, u),
+                            e.params.particles.line_linked.enable && i.linkParticles(t, u), e.params.particles.move.attract.enable && i.attractParticles(t, u), 
                             e.params.particles.move.bounce && i.bounceParticles(t, u);
                         }
                     });
@@ -28605,8 +28590,8 @@ module.exports = Home;
                 value: function() {
                     var e = this.library, t = e.tmp;
                     e.vendors;
-                    cancelAnimationFrame(t.checkAnimFrame), cancelAnimationFrame(t.drawAnimFrame), t.source_svg = void 0,
-                    t.img_obj = void 0, t.count_svg = 0, this.particlesEmpty(), this.library.canvasClear(),
+                    cancelAnimationFrame(t.checkAnimFrame), cancelAnimationFrame(t.drawAnimFrame), t.source_svg = void 0, 
+                    t.img_obj = void 0, t.count_svg = 0, this.particlesEmpty(), this.library.canvasClear(), 
                     this.library.start();
                 }
             } ]), e;
@@ -28621,7 +28606,7 @@ module.exports = Home;
             function e(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var i = t[a];
-                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0),
+                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), 
                     Object.defineProperty(e, i.key, i);
                 }
             }
@@ -28634,8 +28619,8 @@ module.exports = Home;
         });
         var n = a(0), s = function() {
             function e(t) {
-                i(this, e), this.tmp = {}, this.tmp = {}, this.loadParameters(t), this.extendParams(),
-                this.interact = new n.Interact(this.params, this), this.modes = new n.Modes(this.params, this),
+                i(this, e), this.tmp = {}, this.tmp = {}, this.loadParameters(t), this.extendParams(), 
+                this.interact = new n.Interact(this.params, this), this.modes = new n.Modes(this.params, this), 
                 this.vendors = new n.Vendors(this.params, this), this.manager = new n.ParticleManager(this.params, this.interact, this.modes, this.vendors, this);
             }
             return r(e, [ {
@@ -28663,7 +28648,7 @@ module.exports = Home;
                 key: "destroy",
                 value: function() {
                     var e = this.tmp;
-                    this.detachListeners(), this.vendors.detachListeners(), cancelAnimationFrame(e.drawAnimFrame),
+                    this.detachListeners(), this.vendors.detachListeners(), cancelAnimationFrame(e.drawAnimFrame), 
                     this.canvasClear();
                 }
             }, {
@@ -28695,14 +28680,14 @@ module.exports = Home;
                 key: "retinaInit",
                 value: function() {
                     var e = this.canvas, t = this.tmp;
-                    this.params.retina_detect && window.devicePixelRatio > 1 ? (e.pxratio = window.devicePixelRatio,
-                    t.retina = !0, e.width = e.element.offsetWidth * e.pxratio, e.height = e.element.offsetHeight * e.pxratio,
-                    this.params.particles.size.value = t.obj.size_value * e.pxratio, this.params.particles.size.anim.speed = t.obj.size_anim_speed * e.pxratio,
-                    this.params.particles.move.speed = t.obj.move_speed * e.pxratio, this.params.particles.line_linked.distance = t.obj.line_linked_distance * e.pxratio,
-                    this.params.interactivity.modes.grab.distance = t.obj.mode_grab_distance * e.pxratio,
-                    this.params.interactivity.modes.bubble.distance = t.obj.mode_bubble_distance * e.pxratio,
-                    this.params.particles.line_linked.width = t.obj.line_linked_width * e.pxratio, this.params.interactivity.modes.bubble.size = t.obj.mode_bubble_size * e.pxratio,
-                    this.params.interactivity.modes.repulse.distance = t.obj.mode_repulse_distance * e.pxratio) : (e.pxratio = 1,
+                    this.params.retina_detect && window.devicePixelRatio > 1 ? (e.pxratio = window.devicePixelRatio, 
+                    t.retina = !0, e.width = e.element.offsetWidth * e.pxratio, e.height = e.element.offsetHeight * e.pxratio, 
+                    this.params.particles.size.value = t.obj.size_value * e.pxratio, this.params.particles.size.anim.speed = t.obj.size_anim_speed * e.pxratio, 
+                    this.params.particles.move.speed = t.obj.move_speed * e.pxratio, this.params.particles.line_linked.distance = t.obj.line_linked_distance * e.pxratio, 
+                    this.params.interactivity.modes.grab.distance = t.obj.mode_grab_distance * e.pxratio, 
+                    this.params.interactivity.modes.bubble.distance = t.obj.mode_bubble_distance * e.pxratio, 
+                    this.params.particles.line_linked.width = t.obj.line_linked_width * e.pxratio, this.params.interactivity.modes.bubble.size = t.obj.mode_bubble_size * e.pxratio, 
+                    this.params.interactivity.modes.repulse.distance = t.obj.mode_repulse_distance * e.pxratio) : (e.pxratio = 1, 
                     t.retina = !1);
                 }
             }, {
@@ -28733,9 +28718,9 @@ module.exports = Home;
                 key: "onWindowResize",
                 value: function() {
                     var e = this.canvas, t = this.manager, a = this.tmp, i = this.vendors;
-                    e.width = e.element.offsetWidth, e.height = e.element.offsetHeight, a.retina && (e.width *= e.pxratio,
-                    e.height *= e.pxratio), e.element.width = e.width, e.element.height = e.height,
-                    this.params.particles.move.enable || (t.particlesEmpty(), t.particlesCreate(), t.particlesDraw(),
+                    e.width = e.element.offsetWidth, e.height = e.element.offsetHeight, a.retina && (e.width *= e.pxratio, 
+                    e.height *= e.pxratio), e.element.width = e.width, e.element.height = e.height, 
+                    this.params.particles.move.enable || (t.particlesEmpty(), t.particlesCreate(), t.particlesDraw(), 
                     i.densityAutoParticles()), i.densityAutoParticles();
                 }
             } ]), e;
@@ -28750,7 +28735,7 @@ module.exports = Home;
             function e(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var i = t[a];
-                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0),
+                    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), 
                     Object.defineProperty(e, i.key, i);
                 }
             }
@@ -28763,22 +28748,22 @@ module.exports = Home;
         });
         var n = a(0), s = function() {
             function e(t, a) {
-                i(this, e), this.params = t, this.library = a, this.onMouseMove = this.onMouseMove.bind(this),
+                i(this, e), this.params = t, this.library = a, this.onMouseMove = this.onMouseMove.bind(this), 
                 this.onMouseLeave = this.onMouseLeave.bind(this), this.onClick = this.onClick.bind(this);
             }
             return r(e, [ {
                 key: "eventsListeners",
                 value: function() {
                     var e = this.params.interactivity, t = this.library.canvas;
-                    "window" == e.detect_on ? e.el = window : e.el = t.element, (e.events.onhover.enable || e.events.onclick.enable) && (e.el.addEventListener("mousemove", this.onMouseMove),
+                    "window" == e.detect_on ? e.el = window : e.el = t.element, (e.events.onhover.enable || e.events.onclick.enable) && (e.el.addEventListener("mousemove", this.onMouseMove), 
                     e.el.addEventListener("mouseleave", this.onMouseLeave)), e.events.onclick.enable && e.el.addEventListener("click", this.onClick);
                 }
             }, {
                 key: "detachListeners",
                 value: function() {
                     var e = this.params.interactivity, t = this.library.tmp;
-                    e.el && ((e.events.onhover.enable || e.events.onclick.enable) && (e.el.removeEventListener("mousemove", this.onMouseMove),
-                    e.el.addEventListener("mouseleave", this.onMouseLeave)), e.events.onclick.enable && e.el.addEventListener("click", this.onClick)),
+                    e.el && ((e.events.onhover.enable || e.events.onclick.enable) && (e.el.removeEventListener("mousemove", this.onMouseMove), 
+                    e.el.addEventListener("mouseleave", this.onMouseLeave)), e.events.onclick.enable && e.el.addEventListener("click", this.onClick)), 
                     window.cancelAnimationFrame(t.drawAnimFrame);
                 }
             }, {
@@ -28791,7 +28776,7 @@ module.exports = Home;
                     } : {
                         x: e.offsetX || e.clientX,
                         y: e.offsetY || e.clientY
-                    }, r.mouse.pos_x = n.x, r.mouse.pos_y = n.y, i.retina && (r.mouse.pos_x *= a.pxratio,
+                    }, r.mouse.pos_x = n.x, r.mouse.pos_y = n.y, i.retina && (r.mouse.pos_x *= a.pxratio, 
                     r.mouse.pos_y *= a.pxratio), r.status = "mousemove";
                 }
             }, {
@@ -28804,7 +28789,7 @@ module.exports = Home;
                 key: "onClick",
                 value: function() {
                     var e = this.library, t = e.modes, a = e.tmp, i = this.params, r = i.interactivity, n = i.particles;
-                    if (r.mouse.click_pos_x = r.mouse.pos_x, r.mouse.click_pos_y = r.mouse.pos_y, r.mouse.click_time = new Date().getTime(),
+                    if (r.mouse.click_pos_x = r.mouse.pos_x, r.mouse.click_pos_y = r.mouse.pos_y, r.mouse.click_time = new Date().getTime(), 
                     r.events.onclick.enable) switch (r.events.onclick.mode) {
                       case "push":
                         n.move.enable ? t.pushParticles(r.modes.push.particles_nb, r.mouse) : 1 == r.modes.push.particles_nb ? t.pushParticles(r.modes.push.particles_nb, r.mouse) : r.modes.push.particles_nb > 1 && t.pushParticles(r.modes.push.particles_nb);
@@ -28841,7 +28826,7 @@ module.exports = Home;
                     var a = this.library, i = a.canvas, r = a.vendors;
                     this.params.particles.array.forEach(function(a) {
                         var n = a, s = e.x - n.x, o = e.y - n.y;
-                        Math.sqrt(s * s + o * o) <= e.radius + n.radius && (e.x = t ? t.x : Math.random() * i.width,
+                        Math.sqrt(s * s + o * o) <= e.radius + n.radius && (e.x = t ? t.x : Math.random() * i.width, 
                         e.y = t ? t.y : Math.random() * i.height, r.checkOverlap(e));
                     });
                 }
@@ -28892,8 +28877,8 @@ module.exports = Home;
                     if (a.img_error = void 0, "" != r.shape.image.src) if ("svg" == e) {
                         var n = new XMLHttpRequest();
                         n.open("GET", r.shape.image.src), n.onreadystatechange = function(e) {
-                            4 == n.readyState && (200 == n.status ? (a.source_svg = e.currentTarget.response,
-                            i.checkBeforeDraw()) : (console.log("Error react-particles-js - image not found"),
+                            4 == n.readyState && (200 == n.status ? (a.source_svg = e.currentTarget.response, 
+                            i.checkBeforeDraw()) : (console.log("Error react-particles-js - image not found"), 
                             a.img_error = !0));
                         }, n.send();
                     } else {
@@ -28907,30 +28892,30 @@ module.exports = Home;
                 key: "draw",
                 value: function() {
                     var e = this.library, t = e.tmp, a = e.manager, i = e.vendors, r = this.params.particles;
-                    "image" == r.shape.type ? "svg" == t.img_type ? t.count_svg >= r.number.value ? (a.particlesDraw(),
-                    r.move.enable ? t.drawAnimFrame = requestAnimationFrame(i.draw.bind(i)) : cancelAnimationFrame(t.drawAnimFrame)) : t.img_error || (t.drawAnimFrame = requestAnimationFrame(i.draw.bind(i))) : void 0 != t.img_obj ? (a.particlesDraw(),
-                    r.move.enable ? t.drawAnimFrame = requestAnimationFrame(i.draw.bind(i)) : cancelAnimationFrame(t.drawAnimFrame)) : t.img_error || (t.drawAnimFrame = requestAnimationFrame(i.draw.bind(i))) : (a.particlesDraw(),
+                    "image" == r.shape.type ? "svg" == t.img_type ? t.count_svg >= r.number.value ? (a.particlesDraw(), 
+                    r.move.enable ? t.drawAnimFrame = requestAnimationFrame(i.draw.bind(i)) : cancelAnimationFrame(t.drawAnimFrame)) : t.img_error || (t.drawAnimFrame = requestAnimationFrame(i.draw.bind(i))) : void 0 != t.img_obj ? (a.particlesDraw(), 
+                    r.move.enable ? t.drawAnimFrame = requestAnimationFrame(i.draw.bind(i)) : cancelAnimationFrame(t.drawAnimFrame)) : t.img_error || (t.drawAnimFrame = requestAnimationFrame(i.draw.bind(i))) : (a.particlesDraw(), 
                     r.move.enable ? t.drawAnimFrame = requestAnimationFrame(i.draw.bind(i)) : cancelAnimationFrame(t.drawAnimFrame));
                 }
             }, {
                 key: "checkBeforeDraw",
                 value: function() {
                     var e = this.library, t = e.tmp, a = e.vendors;
-                    "image" == this.params.particles.shape.type ? "svg" == t.img_type && void 0 == t.source_svg ? t.checkAnimFrame = requestAnimationFrame(void 0) : (cancelAnimationFrame(t.checkAnimFrame),
+                    "image" == this.params.particles.shape.type ? "svg" == t.img_type && void 0 == t.source_svg ? t.checkAnimFrame = requestAnimationFrame(void 0) : (cancelAnimationFrame(t.checkAnimFrame), 
                     t.img_error || (a.init(), a.draw())) : (a.init(), a.draw());
                 }
             }, {
                 key: "init",
                 value: function() {
                     var e = this.library, t = e.manager, a = e.vendors, i = this.params.particles;
-                    e.retinaInit(), e.canvasInit(), e.canvasSize(), t.particlesCreate(), a.densityAutoParticles(),
+                    e.retinaInit(), e.canvasInit(), e.canvasSize(), t.particlesCreate(), a.densityAutoParticles(), 
                     i.line_linked.color_rgb_line = n.hexToRgb(i.line_linked.color);
                 }
             }, {
                 key: "start",
                 value: function() {
                     var e = this.library, t = e.tmp, a = e.vendors, i = this.params.particles;
-                    n.isInArray("image", i.shape.type) ? (t.img_type = i.shape.image.src.substr(i.shape.image.src.length - 3),
+                    n.isInArray("image", i.shape.type) ? (t.img_type = i.shape.image.src.substr(i.shape.image.src.length - 3), 
                     a.loadImg(t.img_type)) : a.checkBeforeDraw();
                 }
             } ]), e;
