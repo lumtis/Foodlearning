@@ -3,6 +3,7 @@ package com.nudemeth.example.server
 import akka.actor.ActorSystem
 import akka.actor.ActorLogging
 import akka.stream.ActorMaterializer
+import akka.stream.alpakka.cassandra.scaladsl
 import akka.http.scaladsl.Http
 import scala.concurrent.{ExecutionContextExecutor, Future}
 import scala.io.StdIn
@@ -19,6 +20,10 @@ object WebServer extends App {
   server.stop()
 }
 
+
+
+
+
 case class User(name:String)
 
 final case class WebServer() extends ServerRoutes {
@@ -28,7 +33,11 @@ final case class WebServer() extends ServerRoutes {
 
   private var server: Future[Http.ServerBinding] = _
 
-  //implicit val session = Cluster.builder.addContactPoint("127.0.0.1").withPort(9042).build.connect()
+  /*implicit val session = Cluster.builder
+  .addContactPoint("127.0.0.1")
+  .withPort(9042)
+  .build
+  .connect()*/
 
 
 
@@ -41,7 +50,8 @@ final case class WebServer() extends ServerRoutes {
 
     val stmt = new SimpleStatement("SELECT * FROM pairs").setFetchSize(20)
 
-    val rows = CassandraSource(stmt)  //.runWith(Sink.seq)
+
+    val rows = CassandraSource(stmt).runWith(Sink.seq)
     log.info("aigh");
   }
 
