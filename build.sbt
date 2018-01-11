@@ -12,8 +12,11 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
   "com.typesafe.akka" %% "akka-actor"  % akkaVersion,
-  "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion
+  "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
+  "com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % "0.1-RC1",
+  "com.typesafe.akka" %% "akka-cluster" % "2.5.4"
 )
+
 resourceGenerators.in(Compile) += buildFrontEndResource.init
 
 enablePlugins(SbtTwirl)
@@ -40,6 +43,7 @@ lazy val compileFrontend = taskKey[Unit]("Compile all fron-end resources") := {
     throw new IllegalStateException("Front-end build failed: Compilation failed!")
   }
 }
+
 
 lazy val copyNashornPolyfill = taskKey[Unit]("Copy polyfill for Nashorn javascript engine") := {
   val source = sourceDirectory.value / "main/frontend/js/polyfill"
