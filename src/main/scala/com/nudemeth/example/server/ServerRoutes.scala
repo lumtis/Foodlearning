@@ -9,6 +9,7 @@ import com.nudemeth.example.engine._
 import com.nudemeth.example.viewmodel._
 import spray.json._
 
+
 trait ServerRoutes extends JsonSupport {
   implicit def system: ActorSystem
   def log: LoggingAdapter = Logging(system, this.getClass)
@@ -16,7 +17,6 @@ trait ServerRoutes extends JsonSupport {
   lazy val route: Route = concat(
     home,
     about,
-    // pairs,
     js,
     dataHome,
     dataAbout,
@@ -56,26 +56,21 @@ trait ServerRoutes extends JsonSupport {
     } ~
     path("pairs") {
       pathEndOrSingleSlash {
-        get {
-          val model = """{ "pairs": [["Banana","Sel","0"],["Sel","Patate","1"]] }""".parseJson.compactPrint
-          log.info(s"Request: route=/, method=get")
-          complete(HttpEntity(ContentTypes.`application/json`, model))
+        post {
+          entity(as[String]) { param =>
+
+            val ingArray = param.parseJson.convertTo[IngredientsModel]
+            // Requete Cassandra here
+
+            val model = """{ "pairs": [["Banana","Sel","0"],["Sel","Patate","1"]] }""".parseJson.compactPrint
+            log.info(s"Request: route=/, method=post")
+            complete(HttpEntity(ContentTypes.`application/json`, model))
+          }
         }
       }
     }
   }
 
-  // private val pairs: Route = {
-  //   path("pairs") {
-  //     pathEndOrSingleSlash {
-  //       get {
-  //         val model = """{ "pairs": [["Banana","Sel","0"],["Sel","Patate","1"]] }""".parseJson.compactPrint
-  //         log.info(s"Request: route=/, method=get")
-  //         complete(HttpEntity(ContentTypes.`application/json`, model))
-  //       }
-  //     }
-  //   }
-  // }
 
   private val dataHome: Route = {
     path("data" / "home") {
@@ -110,10 +105,5 @@ trait ServerRoutes extends JsonSupport {
       }
     }
   }
-
-
-
-
-
 
 }

@@ -53,8 +53,9 @@ class Home extends React.Component {
         let url = '/pairs';
         let header = new Headers({"Content-type": "application/json"});
         let init = {
-            method: 'GET',
+            method: 'POST',
             header: header,
+            body: JSON.stringify({ings: this.state.ingList}),
             cache: 'no-cache'
         };
         let request = new Request(url, init);
