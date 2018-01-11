@@ -5,8 +5,8 @@ import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
 import scala.concurrent.{ExecutionContextExecutor, Future}
 import scala.io.StdIn
-//import akka.cluster.Cluster
-//import akka.cluster.ClusterEvent._
+import akka.cluster.Cluster
+import akka.cluster.ClusterEvent._
 
 
 object WebServer extends App {

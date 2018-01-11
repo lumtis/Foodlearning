@@ -69,7 +69,7 @@ trait ServerRoutes extends JsonSupport {
 
             val ingArray = param.parseJson.convertTo[IngredientsModel]
             // Requete Cassandra here
-
+            
             val model = """{ "pairs": [["Banana","Sel","0"],["Sel","Patate","1"]] }""".parseJson.compactPrint
             log.info(s"Request: route=/, method=post")
             complete(HttpEntity(ContentTypes.`application/json`, model))
