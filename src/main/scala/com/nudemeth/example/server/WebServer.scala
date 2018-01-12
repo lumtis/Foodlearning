@@ -55,7 +55,7 @@ final case class WebServer() extends ServerRoutes {
         if(ingcur.toLowerCase != ingcur2.toLowerCase) {
           //println(ingcur + " - " + ingcur2 )
           val requetecur= "SELECT * FROM pairs WHERE ing1='"+ingcur+"' AND ing2='"+ingcur2+"'"
-          println(requetecur)
+          //println(requetecur)
 
           val rows = CassandraSource(new SimpleStatement(requetecur).setFetchSize(10)).runWith(Sink.seq)
           /*rows.onSuccess({
@@ -71,17 +71,24 @@ final case class WebServer() extends ServerRoutes {
             for (row <- rows) returnList += row.getString("name")
             println("ReturnList: " + returnList.mkString)
           }*/
+          val pairsIngredients = Array.ofDim[String](2,2)
 
+          var i = 0
           rows.onSuccess({
             case x=>{
+              log.info(s"result => ${x}\n")
               for (row <- x) {
-                if(row.getFloat("coef")>0.2){
-                  print(s"Une association convient => ${row}\n")
+                if(row.getFloat("coef")>0.05){
+                  println(s"Une association convient => ${row}\n")
+                  pairsIngredients(i)(0) = row.getString("ing1")
+                  pairsIngredients(i)(1) = row.getString("ing2")
+                  println(s"${pairsIngredients(i)(0)}")
+                  println(s"${pairsIngredients(i)(1)}")
+                  i += 1
                 }
               }
             }
           })
-
         }
       }
 
