@@ -47,8 +47,12 @@ final case class WebServer() extends ServerRoutes {
     CassandraSource(stmt1).runWith(Sink.seq)
     val stmt2 = new SimpleStatement("SELECT * FROM pairs").setFetchSize(20)
     val rows = CassandraSource(stmt2).runWith(Sink.seq)
-    rows foreach println
-
+    rows.get(0).onSuccess({
+      case x=>{
+        log.info("\n")
+        log.info(s"result => ${x}\n")
+      }
+    })
   }
 
   def stop(): Unit = {
