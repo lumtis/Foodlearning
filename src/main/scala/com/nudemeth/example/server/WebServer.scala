@@ -22,9 +22,6 @@ object WebServer extends App {
   server.stop()
 }
 
-
-
-
 final case class WebServer() extends ServerRoutes {
   implicit val system: ActorSystem = ActorSystem("akka-http-react-system")
   private implicit val materializer: ActorMaterializer = ActorMaterializer()
@@ -42,7 +39,6 @@ final case class WebServer() extends ServerRoutes {
   }
 
   def requete(): Unit = {
-
     val stmt1 = new SimpleStatement("USE \"foodlearning\"").setFetchSize(20)
     CassandraSource(stmt1).runWith(Sink.seq)
     val stmt2 = new SimpleStatement("SELECT * FROM pairs").setFetchSize(20)
@@ -53,6 +49,7 @@ final case class WebServer() extends ServerRoutes {
         log.info(s"result => ${x}\n")
       }
     })
+
   }
 
   def stop(): Unit = {

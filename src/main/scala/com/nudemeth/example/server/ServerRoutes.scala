@@ -37,9 +37,6 @@ trait ServerRoutes extends JsonSupport {
   private val home: Route = {
     pathEndOrSingleSlash {
       get {
-
-
-
         val model = HomeViewModel("This is Home page").toJson.compactPrint
         val content = nashorn.invokeMethod[String]("frontend", "renderServer", "/", model)
         val html = views.html.index.render(content, model).toString()
