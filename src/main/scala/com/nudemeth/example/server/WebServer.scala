@@ -39,7 +39,7 @@ final case class WebServer() extends ServerRoutes {
     log.info(s"Server online at http://localhost:8080/\nPress RETURN to stop...")
   }
 
-  def requete(ingredients: String*): Unit = {
+  def requete(ingredients: String*): Array[Array[String]] = {
     var listeIngredients = new ListBuffer[String]()
 
     ingredients.foreach(listeIngredients += _)
@@ -49,6 +49,7 @@ final case class WebServer() extends ServerRoutes {
     //val stmt2 = new SimpleStatement("SELECT * FROM pairs WHERE ing1='"+liste2ingredients(0)+"' AND ing2='"+liste2ingredients(1)+"'").setFetchSize(20)
 
     CassandraSource(stmt1).runWith(Sink.seq)
+    val pairsIngredients = Array.ofDim[String](2,2)
 
     for(ingcur <- liste2ingredients)
       for(ingcur2 <- liste2ingredients) {
@@ -71,7 +72,6 @@ final case class WebServer() extends ServerRoutes {
             for (row <- rows) returnList += row.getString("name")
             println("ReturnList: " + returnList.mkString)
           }*/
-          val pairsIngredients = Array.ofDim[String](2,2)
 
           var i = 0
           rows.onSuccess({
@@ -89,9 +89,11 @@ final case class WebServer() extends ServerRoutes {
               }
             }
           })
+
+
         }
       }
-
+    pairsIngredients
   }
 
   def stop(): Unit = {
