@@ -37,9 +37,6 @@ trait ServerRoutes extends JsonSupport {
   private val home: Route = {
     pathEndOrSingleSlash {
       get {
-
-
-
         val model = HomeViewModel("This is Home page").toJson.compactPrint
         val content = nashorn.invokeMethod[String]("frontend", "renderServer", "/", model)
         val html = views.html.index.render(content, model).toString()
@@ -69,7 +66,7 @@ trait ServerRoutes extends JsonSupport {
 
             val ingArray = param.parseJson.convertTo[IngredientsModel]
             // Requete Cassandra here
-            
+
             val model = """{ "pairs": [["Banana","Sel","0"],["Sel","Patate","1"]] }""".parseJson.compactPrint
             log.info(s"Request: route=/, method=post")
             complete(HttpEntity(ContentTypes.`application/json`, model))

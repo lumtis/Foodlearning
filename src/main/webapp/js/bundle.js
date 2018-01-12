@@ -27152,8 +27152,9 @@ var Home = function (_React$Component) {
             var url = '/pairs';
             var header = new Headers({ "Content-type": "application/json" });
             var init = {
-                method: 'GET',
+                method: 'POST',
                 header: header,
+                body: JSON.stringify({ ings: this.state.ingList }),
                 cache: 'no-cache'
             };
             var request = new Request(url, init);
