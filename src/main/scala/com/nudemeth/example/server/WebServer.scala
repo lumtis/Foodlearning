@@ -13,11 +13,12 @@ import com.typesafe.config.ConfigFactory
 import com.datastax.driver.core.SimpleStatement
 import com.datastax.driver.core.Cluster
 import akka.stream.scaladsl.Sink
+import scala.collection.mutable.ListBuffer
 
 object WebServer extends App {
   private val server = WebServer()
   server.start()
-  server.requete()
+  server.requete("Huile", "Citron", "Sel", "Poivre", "Riz")
   StdIn.readLine() // let it run until user presses return
   server.stop()
 }
@@ -38,17 +39,51 @@ final case class WebServer() extends ServerRoutes {
     log.info(s"Server online at http://localhost:8080/\nPress RETURN to stop...")
   }
 
-  def requete(): Unit = {
+  def requete(ingredients: String*): Unit = {
+    var listeIngredients = new ListBuffer[String]()
+
+    ingredients.foreach(listeIngredients += _)
+
+    val liste2ingredients = listeIngredients.toList
     val stmt1 = new SimpleStatement("USE \"foodlearning\"").setFetchSize(20)
+    //val stmt2 = new SimpleStatement("SELECT * FROM pairs WHERE ing1='"+liste2ingredients(0)+"' AND ing2='"+liste2ingredients(1)+"'").setFetchSize(20)
+
     CassandraSource(stmt1).runWith(Sink.seq)
-    val stmt2 = new SimpleStatement("SELECT * FROM pairs").setFetchSize(20)
-    val rows = CassandraSource(stmt2).runWith(Sink.seq)
-    rows.get(0).onSuccess({
-      case x=>{
-        log.info("\n")
-        log.info(s"result => ${x}\n")
+
+    for(ingcur <- liste2ingredients)
+      for(ingcur2 <- liste2ingredients) {
+        if(ingcur.toLowerCase != ingcur2.toLowerCase) {
+          //println(ingcur + " - " + ingcur2 )
+          val requetecur= "SELECT * FROM pairs WHERE ing1='"+ingcur+"' AND ing2='"+ingcur2+"'"
+          println(requetecur)
+
+          val rows = CassandraSource(new SimpleStatement(requetecur).setFetchSize(10)).runWith(Sink.seq)
+          /*rows.onSuccess({
+            case x=>{
+              log.info("\n")
+              log.info(s"result => ${x}\n")
+            }
+          })
+
+          case rows => {
+            println(rows)
+            for (row <- rows) println(row.getString("name"))
+            for (row <- rows) returnList += row.getString("name")
+            println("ReturnList: " + returnList.mkString)
+          }*/
+
+          rows.onSuccess({
+            case x=>{
+              for (row <- x) {
+                if(row.getFloat("coef")>0.2){
+                  print(s"Une association convient => ${row}\n")
+                }
+              }
+            }
+          })
+
+        }
       }
-    })
 
   }
 
