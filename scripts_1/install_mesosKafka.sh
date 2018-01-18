@@ -3,9 +3,7 @@
 
 
 #install JDK 7
-sudo add-apt-repository ppa:openjdk-r/ppa  
-sudo apt-get update   
-sudo apt-get install openjdk-7-jdk  
+sudo apt-get install openjdk-7-jre
 
 
 
@@ -22,7 +20,7 @@ git clone https://github.com/mesos/kafka
 cd kafka
 ./gradlew jar downloadKafka
 export MESOS_NATIVE_JAVA_LIBRARY=/usr/local/lib/libmesos.so
-export LIBPROCESS_IP=<IP_ACCESSIBLE_FROM_MASTER>
+export LIBPROCESS_IP=10.0.1.36
 echo 'storage=zk:/kafka-mesos
 master=zk://10.0.0.30:2181/mesos
 zk=10.0.0.30:2181,10.0.0.31:2181,10.0.0.32:2181/KafkaCluster
