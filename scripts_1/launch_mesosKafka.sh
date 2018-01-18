@@ -1,0 +1,1 @@
+kafka-topics.sh --create --config min.insync.replicas=3 --config max.message.bytes=47185920 --config unclean.leader.election.enable=false --topic TOPICINGREDIENTS --partitions 1 --replication-factor 3
