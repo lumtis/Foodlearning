@@ -8,7 +8,11 @@ from pyspark.streaming.kafka import KafkaUtils
 from pyspark.streaming import StreamingContext
 
 
-sc = SparkContext()
+conf = SparkConf()
+conf.setMaster("mesos://10.0.0.30:5050")
+conf.setAppName("Foodleaning")
+conf.set("spark.executor.uri", "spark-2.2.1-bin-hadoop2.7.tgz")
+sc = SparkContext(conf)
 sqlContext = SQLContext(sc)
 ssc = StreamingContext(sc, 10)
 
