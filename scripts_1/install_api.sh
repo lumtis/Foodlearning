@@ -3,7 +3,9 @@ echo "START SCRIPT INSTALLATION API\n" > ~/logs.txt
 git clone https://github.com/cgaunet/SDTD.git
 cd SDTD
 
-sudo apt-get install openjdk-7-jdk
+sudo apt-get -y install unzip
+sudo apt-get -y install openjdk-7-jdk
+sudo apt-get -y install default-jre
 sudo unzip apache-maven-3.5.2-bin.zip
 sudo mv apache-maven-3.5.2/ /opt/maven
 sudo ln -s /opt/maven/bin/mvn /usr/bin/mvn
