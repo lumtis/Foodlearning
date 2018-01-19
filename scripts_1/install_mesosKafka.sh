@@ -25,7 +25,7 @@ export MESOS_NATIVE_JAVA_LIBRARY=/usr/local/lib/libmesos.so
 export LIBPROCESS_IP=<IP_ACCESSIBLE_FROM_MASTER>
 echo 'storage=zk:/kafka-mesos
 master=zk://10.0.0.30:2181/mesos
-zk=10.0.0.30:2181,10.0.0.31:2181,10.0.0.32:2181/KafkaCluster
+zk=localhost:2181
 api=http://10.0.0.30:7000' >> kafka-mesos.properties
 
 
